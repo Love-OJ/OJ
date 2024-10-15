@@ -195,7 +195,8 @@
         <div class="schedule">
             <p><b>2024.9~10月</b> <br>OJ实验室进行招新工作的宣传。</p>
             <p><b>2024.11月</b>
-                <br>意向加入OJ实验室的同学将进入我们的阶段性任务环节，我们根据时间顺序依次发布2~3次Web开发的任务，定期检查任务完成情况。最后进行最终的任务成果验收和面试，确定最终入选的新成员。</p>
+                <br>意向加入OJ实验室的同学将进入我们的阶段性任务环节，我们根据时间顺序依次发布2~3次Web开发的任务，定期检查任务完成情况。最后进行最终的任务成果验收和面试，确定最终入选的新成员。
+            </p>
         </div>
 
         <h2 class="highlight">📩 加入我们</h2>
@@ -238,18 +239,18 @@
             h2.innerText = '';
             let index = 0;
 
-           function type() {
-        if (index < text.length) {
-            h2.innerText += text.charAt(index);
-            index++;
-            setTimeout(type, 200); // 每个字符间隔200毫秒
-        } else {
-            // 打字完成后不再循环，保持静止
-            h2.innerText = text; // 确保最终显示完整文本
-        }
-    }
-    type();
-});
+            function type() {
+                if (index < text.length) {
+                    h2.innerText += text.charAt(index);
+                    index++;
+                    setTimeout(type, 200); // 每个字符间隔200毫秒
+                } else {
+                    // 打字完成后不再循环，保持静止
+                    h2.innerText = text; // 确保最终显示完整文本
+                }
+            }
+            type();
+        });
     </script>
 
 </body>
