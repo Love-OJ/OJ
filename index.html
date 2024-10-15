@@ -238,22 +238,18 @@
             h2.innerText = '';
             let index = 0;
 
-            function type() {
-                if (index < text.length) {
-                    h2.innerText += text.charAt(index);
-                    index++;
-                } else {
-                    setTimeout(() => {
-                        h2.innerText = '';
-                        index = 0;
-                        type();
-                    }, 1000);
-                    return;
-                }
-                setTimeout(type, 200);
-            }
-            type();
-        });
+           function type() {
+        if (index < text.length) {
+            h2.innerText += text.charAt(index);
+            index++;
+            setTimeout(type, 200); // 每个字符间隔200毫秒
+        } else {
+            // 打字完成后不再循环，保持静止
+            h2.innerText = text; // 确保最终显示完整文本
+        }
+    }
+    type();
+});
     </script>
 
 </body>
