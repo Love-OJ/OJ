@@ -137,6 +137,10 @@
             font-weight: bold;
             text-align: center;
         }
+        .group {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -201,7 +205,7 @@
 
         <h2 class="highlight">📩 加入我们</h2>
         <p>现在加群，开始加入实验室考核队伍的第一步！胜利在向你们招手！！！</p>
-        <img src="group.jpg">
+        <img src="group.jpg" class="group">
         <a href="#" class="button">加入交流群</a>
     </div>
 
@@ -218,7 +222,7 @@
         for (let i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", function (event) {
                 event.preventDefault();
-                alert("心动不如行动，还不赶快进群！");
+                alert("心动不如行动，还不赶快扫码进群！");
             });
         }
 
